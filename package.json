@@ -1,11 +1,14 @@
 {
   "name": "c.log",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "console.log and chalk.color combined",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Cody B. Daig",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.1"
+  }
 }

@@ -2,36 +2,40 @@
 
 var chalk = require('chalk');
 
-var c.log = module.exports = {};
+var clog = function(value) {
+  console.log(value);
+};
 
-c.log.green = function(value) {
+clog.green = function(value) {
   console.log(chalk.green(value));
 };
 
-c.log.blue = function(value) {
+clog.blue = function(value) {
   console.log(chalk.blue(value));
 };
 
-c.log.red = function(value) {
+clog.red = function(value) {
   console.log(chalk.red(value));
 };
 
-c.log.yellow = function(value) {
+clog.yellow = function(value) {
   console.log(chalk.yellow(value));
 };
 
-c.log.magenta = function(value) {
+clog.magenta = function(value) {
   console.log(chalk.magenta(value));
 };
 
-c.log.cyan = function(value) {
+clog.cyan = function(value) {
   console.log(chalk.cyan(value));
 };
 
-c.log.white = function(value) {
+clog.white = function(value) {
   console.log(chalk.white(value));
 };
 
-c.log.gray = function(value) {
+clog.gray = function(value) {
   console.log(chalk.gray(value));
 };
+
+module.exports = clog;
